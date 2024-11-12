@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bertperplexity"
+authors = [
+    {name = "suzakuwcx", email = "suzakuwcx@gmail.com"},
+]
+description = 'A transformers extension for calculating the perplexity'
+version = "1.0.0"
+dependencies = ["torch", "transformers"]
+requires-python = '>=3.10'
+optional-dependencies = {}
+
+[tool.setuptools.packages.find]
+exclude = ["test*"]
